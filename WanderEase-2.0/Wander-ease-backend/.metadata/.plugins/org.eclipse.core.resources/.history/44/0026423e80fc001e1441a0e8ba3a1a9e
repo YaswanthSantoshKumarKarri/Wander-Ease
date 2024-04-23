@@ -1,0 +1,9 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@lombok
+public class PlacesData {
+
+}

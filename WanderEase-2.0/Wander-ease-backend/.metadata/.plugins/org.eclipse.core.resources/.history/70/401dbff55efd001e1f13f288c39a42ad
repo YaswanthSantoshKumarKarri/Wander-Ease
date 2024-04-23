@@ -1,0 +1,10 @@
+package com.example.wanderease.serviceimp;
+
+import java.util.List;
+
+import com.example.wanderease.entity.PlacesData;
+import com.example.wanderease.service.PlacesDataService;
+
+public class TripPlanDetailsServiceImp implements PlacesDataService, PlacesDataService {
+
+}

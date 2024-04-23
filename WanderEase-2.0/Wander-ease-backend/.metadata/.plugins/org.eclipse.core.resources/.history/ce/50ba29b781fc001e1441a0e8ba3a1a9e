@@ -1,0 +1,18 @@
+package com.example.wanderease.serviceimp;
+
+import org.springframework.stereotype.Service;
+
+import com.example.wanderease.entity.PlacesData;
+import com.example.wanderease.service.PlacesDataService;
+
+@Service
+public class PlacesDataServiceImp implements PlacesDataService {
+
+	
+	
+	@Override
+	public PlacesData createPlacesData(PlacesData placesData) {
+		return null;
+	}
+
+}

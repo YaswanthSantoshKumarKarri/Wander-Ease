@@ -1,0 +1,27 @@
+package com.example.wanderease.serviceimp;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.wanderease.entity.TripPlansDetails;
+import com.example.wanderease.repo.TripPlanDetailsRepo;
+import com.example.wanderease.service.TripPlanDetailsService;
+
+@Service
+public class TripPlanDetailsServiceImp implements TripPlanDetailsService {
+
+	@Autowired
+	private TripPlanDetailsRepo tripDetailsRepo;
+	
+	@Override
+	public TripPlansDetails create(TripPlansDetails tripPlanDetailsData) {
+		return tripDetailsRepo.save(tripPlanDetailsData);
+	}
+
+	@Override
+	public TripPlansDetails getById(int tripId) {
+		return tripDetailsRepo.findAllByTridId();
+	}
+
+}

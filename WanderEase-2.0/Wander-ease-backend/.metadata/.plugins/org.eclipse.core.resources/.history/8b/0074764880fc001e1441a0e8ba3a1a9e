@@ -1,0 +1,10 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+import lombok.Data;
+
+@Entity
+@Data
+public class PlacesData {
+
+}

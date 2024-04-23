@@ -1,0 +1,30 @@
+package com.example.wanderease.entity;
+
+import io.micrometer.common.lang.NonNull;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name="review")
+public class Reviews {
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long reviewId;
+	private Long UserId;
+	private String UserName;
+	private float Rating;
+	@NonNull
+	private String Comment;
+	@NonNull
+	private int tripID;	
+}

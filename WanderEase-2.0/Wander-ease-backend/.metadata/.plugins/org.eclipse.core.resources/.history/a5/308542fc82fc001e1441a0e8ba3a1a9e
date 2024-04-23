@@ -1,0 +1,27 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Entity
+@Data
+@AllArgsConstructor
+public class PlacesData {
+
+	@Id
+	private String placeName;
+	private String overviewData;
+	private String onelineSentence;
+	private String history;
+	private String one;
+	private String two;
+	private String three;
+	private String four;
+	private String five;
+	private String six;
+	private String seven;
+	private String bgImage;
+
+}

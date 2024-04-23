@@ -1,0 +1,32 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TripPlansDetails {
+
+	@Id
+	private Long id 
+	String placeName   
+	Int tripId
+	Int tripCostPerPerson
+	    int dayCount
+	    String accommodation
+	    String breakfast
+	    String lunch
+	String dinner
+	    String places 
+	    Time timings
+	String dressCode
+	String includedServices
+	String unIncludedServices
+	Int ageLimit
+
+}

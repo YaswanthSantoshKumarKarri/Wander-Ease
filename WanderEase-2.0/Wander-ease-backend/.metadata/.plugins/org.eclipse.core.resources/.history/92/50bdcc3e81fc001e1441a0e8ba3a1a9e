@@ -1,0 +1,7 @@
+package com.example.wanderease.serviceimp;
+
+import com.example.wanderease.service.PlacesDataService;
+
+public class PlacesDataServiceImp implements PlacesDataService {
+
+}

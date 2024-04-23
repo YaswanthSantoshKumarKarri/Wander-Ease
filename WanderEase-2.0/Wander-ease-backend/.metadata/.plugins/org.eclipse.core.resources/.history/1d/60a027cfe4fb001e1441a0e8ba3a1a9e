@@ -1,0 +1,19 @@
+package com.example.wanderease.serviceimp;
+
+import org.springframework.stereotype.Service;
+
+import com.example.wanderease.entity.Reviews;
+import com.example.wanderease.repo.ReviewsRepo;
+import com.example.wanderease.service.ReviewsService;
+
+@Service
+public class ReviewsServiceImp implements ReviewsService{
+
+	private ReviewsRepo reviewRepoObj;
+	
+	@Override
+	public void createReview(Reviews reviewData) {
+		reviewRepoObj.save(reviewData);
+	}
+	
+}

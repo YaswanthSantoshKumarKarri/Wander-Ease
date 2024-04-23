@@ -1,0 +1,6 @@
+package com.example.wanderease.entity;
+
+public class Reviews {
+	private Long reviewId;
+	
+}

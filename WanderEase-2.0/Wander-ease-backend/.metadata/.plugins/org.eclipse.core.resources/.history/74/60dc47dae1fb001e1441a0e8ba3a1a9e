@@ -1,0 +1,18 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Reviews {
+	private Long reviewId;
+	private Long UserId;
+	private String UserName;
+	private String Rating;
+	private String Comment;
+}
