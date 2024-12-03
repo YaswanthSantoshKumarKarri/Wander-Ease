@@ -1,0 +1,29 @@
+package com.example.wanderease.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "TripDayWisePlans")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TripDayWisePlans {
+	
+	@Id
+	private int PlaceId;
+	private String StateName;
+	private int TripDayCount;
+	private String dayAgenda;
+	private String dayDescription;
+	private String dayDepartureTime;
+	private String dayTask;
+	private String dayBreakfast;
+	private String dayLunch;
+	private String dayDinner;
+
+}
